@@ -52,6 +52,19 @@ class PublishApartmentFragment : Fragment() {
         return binding.root
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {//cambio
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == Image_Capture_Code) {
+            if (resultCode == AppCompatActivity.RESULT_OK) {
+                val bp = data!!.extras!!["data"] as Bitmap?//cambio
+                imgCapture!!.setImageBitmap(bp)
+                bitmap = bp
+            } else if (resultCode == AppCompatActivity.RESULT_CANCELED) {
+                Toast.makeText(context, "Cancelled", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
     override fun onResume() {
         super.onResume()
         val addPhotoBtn = binding.addPhotosBtn
@@ -108,25 +121,18 @@ class PublishApartmentFragment : Fragment() {
                     "Apartment published succesfully",
                     Toast.LENGTH_SHORT
                 ).show()
+                landlordPname.setText("")
+                landlordPphone.setText("")
+                landlordPdesc.setText("")
+                landlordPprice.setText("")
+                landlordPlatitude.setText("")
+                landlordPlongitude.setText("")
             } else {
                 Toast.makeText(
                     context,
                     "Check the input fields!",
                     Toast.LENGTH_SHORT
                 ).show()
-            }
-        }
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {//cambio
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == Image_Capture_Code) {
-            if (resultCode == AppCompatActivity.RESULT_OK) {
-                val bp = data!!.extras!!["data"] as Bitmap?//cambio
-                imgCapture!!.setImageBitmap(bp)
-                bitmap = bp
-            } else if (resultCode == AppCompatActivity.RESULT_CANCELED) {
-                Toast.makeText(context, "Cancelled", Toast.LENGTH_LONG).show()
             }
         }
     }
