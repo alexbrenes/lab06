@@ -38,14 +38,6 @@
                 android:text="84182414"
                 android:textColor="@color/black"/>
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_marginTop="30dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SMS"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/smsContent"
