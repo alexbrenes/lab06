@@ -12,14 +12,37 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.lab06.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/apartmentsFragment"
+        android:name="com.lab06.presentation.apartments.ApartmentsFragment"
+        android:label="ApartmentsFragment" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.lab06.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/publishApartmentFragment"
+        android:name="com.lab06.presentation.publish.PublishApartmentFragment"
+        android:label="fragment_publish_apartment"
+        tools:layout="@layout/fragment_publish_apartment" />
+    <fragment
+        android:id="@+id/apartmentDetailFragment"
+        android:name="com.lab06.presentation.apartment.ApartmentDetailFragment"
+        android:label="fragment_apartment_detail"
+        tools:layout="@layout/fragment_apartment_detail" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.lab06.presentation.contact.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.lab06.presentation.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/setLocationFragment"
+        android:name="com.lab06.presentation.setLocation.SetLocationFragment"
+        android:label="fragment_set_location"
+        tools:layout="@layout/fragment_set_location" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.lab06.presentation.videocomponent.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
 </navigation>
