@@ -17,6 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:text="Available apartments"
                 android:textSize="34sp" />
 

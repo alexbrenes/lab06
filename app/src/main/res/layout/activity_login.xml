@@ -4,14 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.login.LoginActivity">
+    tools:context=".presentation.login.LoginActivity"
+    android:background="@color/teal_700">
 
     <Button
         android:id="@+id/authenticateBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Authenticate"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyRentalApt"
+        android:textColor="@color/textCol"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/authenticateBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -22,53 +22,86 @@
             android:id="@+id/idApartment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            tools:text="8" />
 
         <TextView
             android:id="@+id/apartmentDetailDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            tools:text="Alajuela, Alajuela, San Isidro" />
 
         <TextView
             android:id="@+id/apartmentDetailPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            tools:text="456 123"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Landlord Info" />
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:text="Landlord Info"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/landlordDetailName"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            tools:text="Alex Brenes"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/landlordDetailPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            tools:text="84182414"
+            android:textSize="30dp" />
+
         <Button
             android:id="@+id/locateInMap"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button"
             android:text="Locate in map" />
 
         <Button
             android:id="@+id/videoTourBtn"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button"
             android:text="Video tour" />
 
         <Button
             android:id="@+id/contactBtn"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button"
             android:text="Contact" />
     </LinearLayout>
 </FrameLayout>

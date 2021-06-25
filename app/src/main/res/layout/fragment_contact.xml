@@ -16,31 +16,56 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:id="@+id/textView6"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="Contact landlord" />
+
             <EditText
                 android:id="@+id/phoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
                 android:ems="10"
+                android:textSize="30sp"
                 android:enabled="false"
-                android:text="number" />
+                android:gravity="center_horizontal"
+                android:text="84182414"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/textView2"
+                android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SMS" />
+                android:text="SMS"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/smsContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:ems="10"
+                android:hint="SMS Content"
                 android:inputType="textPersonName"
-                android:hint="SMS Content" />
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:text="Hola quiero ver el apartamento" />
 
             <Button
                 android:id="@+id/sendSMSBtn"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/custom_button"
                 android:layout_height="wrap_content"
                 android:text="Send SMS" />
         </LinearLayout>
@@ -52,7 +77,10 @@
 
             <Button
                 android:id="@+id/callBtn"
-                android:layout_width="match_parent"
+                android:background="@drawable/custom_button"
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:text="Call" />
         </LinearLayout>

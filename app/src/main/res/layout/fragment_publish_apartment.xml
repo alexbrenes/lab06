@@ -8,8 +8,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/apartmentPImage"
@@ -19,42 +20,47 @@
 
         <EditText
             android:id="@+id/landlordPname"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:gravity="center"
             android:hint="Landlord name"
-            android:gravity="center"/>
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/landlordPphone"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:gravity="center"
             android:hint="Landlord phone number"
-            android:gravity="center"/>
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/landlordPdesc"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:gravity="center"
             android:hint="Description"
-            android:gravity="center"/>
+            android:inputType="textPersonName" />
 
         <EditText
+            android:layout_marginTop="10dp"
             android:id="@+id/landlordPprice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:gravity="center"
             android:hint="Price"
-            android:gravity="center"/>
+            android:inputType="textPersonName" />
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
@@ -64,9 +70,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:gravity="center"
                 android:hint="Latitude"
-                android:gravity="center"/>
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/landlordPlongitude"
@@ -74,39 +80,47 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:gravity="center"
                 android:hint="Longitude"
-                android:gravity="center"/>
+                android:inputType="textPersonName" />
 
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:paddingHorizontal="10sp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/addPhotosBtn"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Add photo"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginRight="15dp"
+                android:background="@drawable/custom_button"
+                android:text="Add photo" />
 
             <Button
                 android:id="@+id/setLocation"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/custom_button"
                 android:text="Set location" />
 
         </LinearLayout>
 
         <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/publishBtn"
-            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="390dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
             android:text="Publish" />
 
     </LinearLayout>
