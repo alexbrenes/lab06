@@ -35,7 +35,7 @@
             android:layout_marginTop="15dp"
             android:gravity="center_horizontal"
             android:textColor="@color/black"
-            android:textSize="30dp"
+            android:textSize="25dp"
             tools:text="Alajuela, Alajuela, San Isidro" />
 
         <TextView
@@ -46,7 +46,7 @@
             android:textColor="@color/black"
             android:gravity="center_horizontal"
             tools:text="456 123"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -55,7 +55,7 @@
             android:textColor="@color/black"
             android:layout_marginTop="15dp"
             android:text="Landlord Info"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/landlordDetailName"
@@ -65,7 +65,7 @@
             android:layout_marginTop="15dp"
             android:gravity="center_horizontal"
             tools:text="Alex Brenes"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/landlordDetailPhoneNumber"
@@ -75,7 +75,7 @@
             android:gravity="center_horizontal"
             android:textColor="@color/black"
             tools:text="84182414"
-            android:textSize="30dp" />
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/locateInMap"
